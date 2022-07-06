@@ -6,6 +6,16 @@ header{
     align-items: center;
     justify-content: space-around;
 }
+.navDiv{
+    position: sticky !important;
+    top: 0;
+    background-color: white;
+    /* border-color: #747474;
+    border: 20px; */
+
+
+}
+
 .navbar{
     display: flex !important;
     align-items: center !important;
@@ -14,9 +24,8 @@ header{
     vertical-align: top;
     background-color: #ffffff;
     position: sticky !important;
-    top: 0;
-    /* width: 50% !important; */
-    /* margin: 0 auto; */
+    width: 50% !important;
+    margin: 0 auto;
     height: 60px;
     font-weight: 400;
     font-size: 0.9em;
@@ -63,7 +72,6 @@ main{
     grid-template-columns: (2,200);
     grid-template-rows: 200;
     line-height: 1.75;
-    
 }
 
 .secondSection{
@@ -140,14 +148,94 @@ main{
     display: grid;
     grid-template-columns:auto auto auto auto;
 }
+.thirdSection .grid-container svg{
+    width: 70%;
+    color: gray;
+}
 
 .fourthSection{
-    background-color: #e5faf8;
+    display: flex;
+    width: 60%;
+    /* justify-content: space-between; */
+    /* align-items: center; */
     color: #747474;
 }
 
 .fourthSection .text{
-    display: inline;
-    width: 20%;
+    /* display: inline; */
+    width: 50%;
 }
 
+.fourthSection .text p{
+    width: 80%;
+}
+
+.fourthSection h1{
+    color: #00b39b;
+    width: 80%;
+    margin-bottom: 1em;
+    font-weight: 200 !important;
+}
+.fourthSection h3{
+    color: #00b39b;
+    width: 80%;
+    margin-bottom: 1em;
+    font-size: 2em;
+    font-weight: 100;
+}
+
+.fourthSection .grid-container{
+    width: 50%;
+    display: grid;
+    grid-template-columns: 250px 250px;
+    grid-template-rows: 300px 300px;
+    gap: 20px;
+    align-items: center;
+}
+
+.fourthSection .grid-container > div{
+    height: 250px;
+    padding: 5%;
+    background-color: white;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.fifthSection{
+    margin: 3% auto;
+    width: 30%;
+    text-align: center;
+}
+
+.cityGrid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    width: 55%;
+    margin: auto;
+    gap: 2em;
+}
+.card>div{
+    
+    /* justify-content: space-between; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    /* margin: 20px auto; */
+    transition: 0.5s;
+}
+.card>div:hover{
+    box-shadow: 4px;
+}
+.cityGrid .card-title{
+    justify-content: flex-start;
+    /* margin-right: 2em; */
+}
+.cityGrid .btn{
+    justify-content: flex-end;
+    background-color: #3d83df;
+}
+footer{
+    font-size: 13px;
+}
