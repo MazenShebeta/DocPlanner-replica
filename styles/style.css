@@ -12,6 +12,7 @@ header{
     background-color: white;
     /* border-color: #747474;
     border: 20px; */
+    z-index: 1;
 
 
 }
